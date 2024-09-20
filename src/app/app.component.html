@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="left-panel">
+    <app-input-form (addUser)="addUser($event)"></app-input-form>
+  </div>
+  <div class="right-panel">
+    <div *ngIf="users.length === 0">
+      <p>No users added yet.</p>
+    </div>
+    <app-card *ngFor="let user of users" [user]="user"></app-card>
+  </div>
+</div>

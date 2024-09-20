@@ -1,0 +1,7 @@
+<div class="card">
+    <h3>{{ user.name }}</h3>
+    <p><strong>Age:</strong> {{ user.age }} {{ user.ageUnit }}</p>
+    <p><strong>Student:</strong> {{ user.isStudent ? 'Yes' : 'No' }}</p>
+    <p *ngIf="user.isStudent && user.school"><strong>School:</strong> {{ user.school }}</p>
+  </div>
+  
